@@ -16,7 +16,6 @@
     crossorigin=""/>
 </head>
 <body >
-
     <!doctype html>
     <html lang="en">
     <head>
@@ -24,7 +23,6 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>jQuery UI Menu - Default functionality</title>
       <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-      
       <link rel="stylesheet" href="/static/css/style.css">
       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -38,17 +36,38 @@
       </style>
     </head>
     <body>
-
-      <h2><stong><i></stong></h2> 
-        
+      <div class = "title">
+      <h2><stong><i>Laughing Stones</stong></h2> 
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a id="tablinks" onclick="openChannel(event, 'landing-page')" class="navbar-brand" href="#landing-page">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li class="nav-item">
+                          <a id="tablinks" onclick="openChannel(event, 'comparisons-page')" class="nav-link" href="#Music">Songs</a>
+                      </li>
+                      <li class="nav-item">
+                          <a id="tablinks" onclick="openChannel(event, 'data-page')"class="nav-link" href="#Artist">Artist</a>
+                      </li>
+                  </ul>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class = "center">
       <select id="selDataset"> 
       </select>
       <div id="plot"></div>
       <!-- <script src="data.js"></script> -->
       <script>let data =[]; </script>
       <script src="plots.js"></script>
+    </div>
       <script>  
-
       </script>
     </body>
     </html>
