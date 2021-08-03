@@ -69,7 +69,7 @@ let names = decades[displayYear]["Genres"].map(function (row){
   return row.Year;
 });
 
-// Trace for the Greek Data
+
 let trace1 = {
     x: decades[displayYear]["Genres"].map(row => row.Genre),
     y: decades[displayYear]["Genres"].map(row => row.Count),
